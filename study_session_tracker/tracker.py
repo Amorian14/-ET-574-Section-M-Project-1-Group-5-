@@ -3,7 +3,7 @@ from data import subjects, minutes, locations, notes
 def add_session():
     # prompt for subject
     while True:
-        subject = input("enter subject/course: ").strip()
+        subject = input("Enter subject/course: ").strip()
         if subject:
             subject = subject.title()
             break
@@ -12,17 +12,17 @@ def add_session():
 
     # prompt for minutes
     while True:
-        time = input("enter minutes studied: ").strip()
+        time = input("Enter minutes studied: ").strip()
         if time.isdigit() and int(time) >= 0 and int(time) <= 1440:  # Assuming a day has 1440 minutes
             minute = int(time)
             break
         else:
-            print("INVALID INPUT")
+            print("INVALID TIME")
 
     # prompt for location
     valid_locations = {"Home", "Library", "Lab", "Other"}
     while True:
-        location = input("enter location: (Home/Library/Lab/Other)").strip()
+        location = input("Enter location: (Home/Library/Lab/Other)").strip()
         if location.title() in valid_locations:
             location = location.title()
             break
@@ -31,7 +31,7 @@ def add_session():
 
     #prompt for notes
 
-    note = input("enter notes (optional): ").strip()
+    note = input("Enter notes (optional): ").strip()
     if note:
         note = note
     else:
