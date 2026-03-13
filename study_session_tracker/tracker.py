@@ -20,13 +20,14 @@ def add_session():
             print("INVALID INPUT")
 
     # prompt for location
+    valid_locations = {"Home", "Library", "Lab", "Other"}
     while True:
         location = input("enter location: (Home/Library/Lab/Other)").strip()
-        if location:
+        if location.title() in valid_locations:
             location = location.title()
             break
         else:
-            print("INVALID INPUT")
+            print("INVALID LOCATION")
 
     #prompt for notes
 
