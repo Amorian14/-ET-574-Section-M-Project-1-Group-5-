@@ -1,3 +1,5 @@
+from data import subjects, minutes, locations, notes
+
 def add_session():
     # prompt for subject
     while True:
@@ -33,3 +35,11 @@ def add_session():
         note = note
     else:
         note = "None."
+
+    #store session data
+    subjects.append(subject)
+    minutes.append(minute)
+    locations.append(location)
+    notes.append(note)
+
+    print(f"Studied {subject} for {minute} minutes at {location}\nSession added.")
