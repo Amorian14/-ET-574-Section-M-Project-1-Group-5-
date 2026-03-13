@@ -1,3 +1,4 @@
 ID,TYPE,COMMIT #,STATUS,DESCRIPTION,REPORTER,ASSIGNEE,DUE,CREATED,RESOLVED,NOTES
 1,task,4ff4ba57c0d0ead6e9955d1433428f9b9f62a011,closed,Defined add_session() in tracker,,KennJScott,Mar13,Mar12,Mar12,
-2,issue,1c0e73306c318a129fb62fea88faecf3baa7ff49,open,add_session() does not update the session count in the tracker,,KennJScott,Mar13,Mar12,Mar12,
+2,issue,1c0e73306c318a129fb62fea88faecf3baa7ff49,closed,add_session() does not update the session count in the tracker,,KennJScott,Mar13,Mar12,Mar12,
+3,issue,c9a2b894e81e85efd3a4dee33b6d0dcbcda55111,closed,Only specified locations are accepted in add_session(),,KennJScott,Mar13,Mar12,Mar12,
